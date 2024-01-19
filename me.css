@@ -1,0 +1,93 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+#resume-container {
+    max-width: 800px;
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#resume-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#resume-header img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid #3498db;
+    transition: transform 0.3s ease-in-out;
+}
+
+#resume-header img:hover {
+    transform: scale(1.1);
+}
+
+h1, h2, h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p, li {
+    color: #555;
+    line-height: 1.4;
+}
+
+#resume-content {
+    line-height: 1.6;
+}
+
+#color-change-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#color-change-btn:hover {
+    background-color: #2980b9;
+}
+
+#resume-content h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+#resume-content li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+#resume-content li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+    font-size: 1.2em;
+    line-height: 1;
+    margin-right: 5px;
+}
